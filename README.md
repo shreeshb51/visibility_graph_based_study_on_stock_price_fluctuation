@@ -15,6 +15,7 @@ This application analyzes stock market fluctuations using visibility graphs, a m
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Data Source](#data-source)
+- [Note](#note)
 
 ## Installation
 To set up the Stock Visibility Graph Analyzer, follow these steps:
