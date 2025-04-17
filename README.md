@@ -232,3 +232,7 @@ Please ensure your data CSV includes the following columns:
 - 'open', 'high', 'low', 'close': Daily price data
 - 'volume': Trading volume
 - Optional: 'sector', 'percent_change'
+
+## Note
+| AI was used to generate most of the docstrings and inline comments in the code. |
+|:--:|
