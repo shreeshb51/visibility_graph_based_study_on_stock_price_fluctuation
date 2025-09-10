@@ -1,9 +1,11 @@
 # Visibility Graph Based Study on Stock Price Fluctuation
 
 ## Project Description
+
 This application analyzes stock market fluctuations using visibility graphs, a method of transforming time series data into complex networks. By converting stock price movements into graph structures, the tool extracts topological features that help identify patterns and predict future price trends. The analyzer supports both a command-line Jupyter Notebook interface and an interactive Streamlit web application.
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -17,7 +19,10 @@ This application analyzes stock market fluctuations using visibility graphs, a m
 - [Data Source](#data-source)
 - [Note](#note)
 
+---
+
 ## Installation
+
 To set up the Stock Visibility Graph Analyzer, follow these steps:
 
 1. Install the required dependencies:
@@ -32,6 +37,7 @@ To set up the Stock Visibility Graph Analyzer, follow these steps:
 ## Usage
 
 ### Jupyter Notebook Interface
+
 Run the Jupyter Notebook version (visibility_graph_based_study_on_stock_price_fluctuation_non_ui.ipynb) with:
 
 ```bash
@@ -47,6 +53,7 @@ Open the notebook and run the cell to:
 6. Extract and analyze graph features
 
 ### Streamlit Web Application
+
 Launch the Streamlit app with:
 
 ```bash
@@ -63,6 +70,7 @@ In the web interface:
 7. View the generated visibility graphs and feature distributions
 
 ## Features
+
 - **Data Preprocessing**: Cleans and prepares stock market time series data
 - **Sliding Window Analysis**: Creates moving averages across a user-defined window size
 - **Visibility Graph Generation**: Converts time series segments into visibility graphs
@@ -113,6 +121,7 @@ The analysis process follows these key steps:
 ## Examples
 
 ### Sample Visibility Graph
+
 When analyzing stock data with a window size of 20 days, the visibility graphs typically reveal the following patterns:
 - Decreasing trends often exhibit higher clustering coefficients
 - Increasing trends show greater average shortest path lengths
@@ -135,6 +144,7 @@ When analyzing stock data with a window size of 20 days, the visibility graphs t
 | ![image](images/visibility_graph_sample_image_ui.png) |
 
 ### Feature Distribution Example
+
 The distribution of graph features by trend class helps identify which topological metrics are most predictive of future price movements:
 
 | *Sample KDE plot with respect to Number of Edges* |
@@ -178,11 +188,13 @@ The distribution of graph features by trend class helps identify which topologic
 | ![image](images/distribution_of_clustering_coeff_sample_image.png) |
 
 ## References
+
 1. Lacasa, L., Luque, B., Ballesteros, F., Luque, J., & Nuño, J. C. (2008). From time series to complex networks: The visibility graph. Proceedings of the National Academy of Sciences, 105(13), 4972-4975.
 2. Yan, W., & van Serooskerken, E. (2015). Forecasting financial extremes: A network degree measure of super-exponential growth. PLOS ONE, 10(9), e0128908.
 3. Xie, W. J., Zhou, W. X., & Yan, W. (2016). Detection of complex financial fluctuations using visibility graphs. Physica A: Statistical Mechanics and its Applications, 443, 235-245.
 
 ## Dependencies
+
 - Python 3.7+
 - pandas
 - numpy
@@ -196,6 +208,7 @@ The distribution of graph features by trend class helps identify which topologic
 ## Algorithms/Mathematical Concepts Used
 
 ### Visibility Graph Algorithm
+
 The core mathematical concept is the visibility graph transformation, which maps a time series to a complex network. The algorithm creates edges between data points that satisfy the visibility condition:
 
 For any three points (t_a, y_a), (t_b, y_b), and (t_c, y_c) where t_a < t_c < t_b:
@@ -203,6 +216,7 @@ For any three points (t_a, y_a), (t_b, y_b), and (t_c, y_c) where t_a < t_c < t_
   y_c < y_a + (y_b - y_a)(t_c - t_a)/(t_b - t_a)
 
 ### Graph Theoretic Metrics
+
 The analysis leverages several graph theory concepts:
 - **Degree Distribution**: Probability distribution of node connections
 - **Clustering Coefficient**: Measure of node grouping tendencies
@@ -211,19 +225,23 @@ The analysis leverages several graph theory concepts:
 - **Edge Connectivity**: Minimum number of edges to disconnect the graph
 
 ### Statistical Analysis
+
 - Kernel Density Estimation (KDE) for feature distribution visualization
 - Time series segmentation via sliding windows
 - Trend classification based on comparative time point analysis
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
+
 - [NetworkX](https://networkx.org/) team for their comprehensive graph theory implementation
 - [Streamlit](https://streamlit.io/) for enabling rapid development of interactive data applications
 - The complex networks research community for developing visibility graph methodology
 
 ## Data Source
+
 The stock market data used in this project can be obtained from:
 - [Nepse Alpha](https://nepsealpha.com/nepse-data)
 
@@ -235,5 +253,6 @@ Please ensure your data CSV includes the following columns:
 - Optional: 'sector', 'percent_change'
 
 ## Note
+
 | AI was used to generate most of the docstrings and inline comments in the code. |
 |:--:|
