@@ -1,5 +1,7 @@
 # Visibility Graph Based Study on Stock Price Fluctuation
 
+[Official Acceptance Letter & Completion Certificate](path/to/document](NCDC.pdf)
+
 ## Project Description
 
 This application analyzes stock market fluctuations using visibility graphs, a method of transforming time series data into complex networks. By converting stock price movements into graph structures, the tool extracts topological features that help identify patterns and predict future price trends. The analyzer supports both a command-line Jupyter Notebook interface and an interactive Streamlit web application.
