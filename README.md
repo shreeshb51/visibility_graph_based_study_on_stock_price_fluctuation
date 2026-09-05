@@ -1,6 +1,6 @@
 # Visibility Graph Based Study on Stock Price Fluctuation
 
-[Official Acceptance Letter & Completion Certificate](path/to/document](NCDC.pdf)
+[Official Acceptance Letter & Completion Certificate](NCDC.pdf)
 
 ## Project Description
 
